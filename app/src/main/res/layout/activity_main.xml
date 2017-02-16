@@ -6,10 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="upgradekaro.techinewsworld.MainActivity">
-
-    <android.support.v7.widget.RecyclerView
+    <ListView
         android:paddingTop="10dp"
         android:layout_width="match_parent"
-        android:id="@+id/recyler"
+        android:id="@+id/listy"
         android:layout_height="wrap_content" />
 </RelativeLayout>
