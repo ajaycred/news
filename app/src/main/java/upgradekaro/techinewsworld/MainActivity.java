@@ -28,12 +28,32 @@ public class MainActivity extends AppCompatActivity {
         firebaseDatabase.getInstance();
         reference=firebaseDatabase.getInstance().getReference("technewslinks");
         initcomponents();
-        FireBaseProcess(reference);
+        SettingAdapter();
+       // FireBaseProcess(reference);
+        Traillistners(reference);
     }
 
     private void initcomponents() {
         listView= (ListView) findViewById(R.id.listy);
         LinearLayoutManager layout=new LinearLayoutManager(MainActivity.this);
+    }
+
+    private void Traillistners(DatabaseReference databaseReference){
+        databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                for(DataSnapshot objects:dataSnapshot.getChildren()){
+                    Sites sites=objects.getValue(Sites.class);
+                    arrayList.add(sites);
+                    Log.d("sites",sites.getName()+"\n"+sites.getLink());
+                    SettingAdapter();
+                }
+            }
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
     }
     private void FireBaseProcess(DatabaseReference databaseReference){
         databaseReference.addValueEventListener(new ValueEventListener() {
@@ -51,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
             public void onCancelled(DatabaseError databaseError) {
             }
         });
-        SettingAdapter();
+      //  SettingAdapter();
     }
 
     private void SettingAdapter(){

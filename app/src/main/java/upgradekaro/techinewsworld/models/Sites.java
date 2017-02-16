@@ -8,8 +8,18 @@ public class Sites {
     String link;
     String name;
     String image;
+    String color;
+
 
     public Sites() {
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 
     public String getLink() {
@@ -37,9 +47,10 @@ public class Sites {
         this.image = image;
     }
 
-    public Sites(String link, String name, String image) {
+    public Sites(String link, String name, String image,String color) {
         this.link = link;
         this.name = name;
         this.image = image;
-    }
+        this.color=color;
+   }
 }
