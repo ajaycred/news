@@ -6,9 +6,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="upgradekaro.techinewsworld.MainActivity">
-    <ListView
-        android:paddingTop="10dp"
+   <include layout="@layout/maintool"></include>
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:id="@+id/listy"
-        android:layout_height="wrap_content" />
+        android:id="@+id/activitymain_container"
+        android:layout_below="@+id/maintoolbar"
+        android:layout_height="match_parent">
+    </RelativeLayout>
+
 </RelativeLayout>

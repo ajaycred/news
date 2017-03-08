@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="upgradekaro.techinewsworld.fragments.WebviewFragment">
+    <include layout="@layout/webtoolbar"
+
+        android:id="@+id/include"></include>
+
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/webfrag_webview"
+        android:layout_below="@+id/include"
+        android:layout_centerHorizontal="true"/>
+    <ProgressBar
+        android:layout_below="@id/include"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:progressTint="@color/main"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragweb_progress" />
+</RelativeLayout>
