@@ -32,6 +32,7 @@ public class WebviewFragment extends Fragment implements View.OnClickListener {
     ProgressBar fragwebprogress;
     ImageView webfragtoolbarshare,webfragtoolbarfav,webfragtoolbarbackarrow;
     Dbhelper dbhelper;
+    Boolean Favlinkexsist=false;
     public WebviewFragment() {
         // Required empty public constructor
     }
@@ -117,6 +118,11 @@ public class WebviewFragment extends Fragment implements View.OnClickListener {
             presenturl=WebFragWebview.getOriginalUrl().toString();
             Log.e("runningfav","tested");
             Dboperationwrite(presenturl,"trail");
+            Favlinkexsist=true;
+            if(Favlinkexsist==true){
+                webfragtoolbarfav.setImageResource(R.drawable.heart_off);
+            }
+
         }
         if(v==webfragtoolbarshare){
             Log.e("runningshare","tested");

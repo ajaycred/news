@@ -1,4 +1,4 @@
-package upgradekaro.techinewsworld;
+package upgradekaro.techinewsworld.adapter;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -20,6 +20,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
+import upgradekaro.techinewsworld.R;
 import upgradekaro.techinewsworld.fragments.WebviewFragment;
 import upgradekaro.techinewsworld.models.Sites;
 

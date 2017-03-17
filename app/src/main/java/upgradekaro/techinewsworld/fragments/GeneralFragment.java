@@ -18,7 +18,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-import upgradekaro.techinewsworld.Listada;
+import upgradekaro.techinewsworld.adapter.Listada;
 import upgradekaro.techinewsworld.R;
 import upgradekaro.techinewsworld.models.Sites;
 
