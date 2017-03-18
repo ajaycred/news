@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#00b7b7b7"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        app:cardElevation="10dp"
+        android:layout_margin="10dp"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="6"
+            android:layout_height="match_parent">
+            <upgradekaro.techinewsworld.utils.CustomFontDays
+                android:text="TextView"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:id="@+id/favitem_tv_title"
+                android:layout_weight="3" />
+            <ImageView
+                android:layout_width="0dp"
+                android:padding="10dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@mipmap/open"
+                android:id="@+id/favitem_iv_open"
+                android:layout_weight="1" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@mipmap/share"
+                android:padding="10dp"
+                android:id="@+id/favitem_iv_share"
+                android:layout_weight="1" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@mipmap/delete"
+                android:padding="10dp"
+                android:id="@+id/favitem_iv_delete"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

@@ -38,14 +38,19 @@ public class Dbhelper extends SQLiteOpenHelper {
         return true;
     }
 
-    public Cursor GetFavLinks(){
-        database=this.getReadableDatabase();
-        Cursor favlinkscursor=database.rawQuery("SELECT * FROM "+Dbutils.Db_table_fav,null);
-        return favlinkscursor;
-    }
 
     public SQLiteDatabase openDatabase() {
         database = this.getWritableDatabase();
         return database;
+    }
+    public Cursor getDatafromfavTable() {
+        SQLiteDatabase database = this.getReadableDatabase();
+        Cursor cursor = database.rawQuery("SELECT * FROM "+Dbutils.Db_table_fav, null);
+        return cursor;
+    }
+
+    public void Deleterowfromfavtable(String favlinktitle) {
+        SQLiteDatabase database = this.getWritableDatabase();
+        database.delete(""+Dbutils.Db_table_fav, Dbutils.Db_fav_link_name+"=?", new String[]{favlinktitle});
     }
 }

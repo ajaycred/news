@@ -80,5 +80,4 @@ public class GeneralFragment extends Fragment {
         Listada adapter=new Listada(arrayList,getContext());
         listView.setAdapter(adapter);
     }
-
 }

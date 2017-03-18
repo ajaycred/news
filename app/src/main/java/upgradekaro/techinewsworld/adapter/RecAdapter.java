@@ -36,7 +36,7 @@ public class RecAdapter extends RecyclerView.Adapter<RecAdapter.NewsViewHolder>
     ArrayList<Sites> arrayList;
     String[] news={"times of india ","Decan Chronical","The hindu","India Today","Hans India ","Sport Start","times of india ","Decan Chronical","The hindu","India Today","Hans India ","Sport Start","times of india ","Decan Chronical","The hindu","India Today","Hans India ","Sport Start"};
     String[] colors={"#424c59","#8c4d79","#b19d19","#3a3568","#8b3a3a","#4b330e","#4b330e","#395880","395880","#8c4d79","#b19d19","#3a3568","#8b3a3a","#4b330e","#4b330e","#395880","#424c59","#8c4d79"};
-    int[] paperlogo={R.mipmap.tv,R.mipmap.chronic,R.mipmap.hindu,R.mipmap.chronic,R.mipmap.indiatoday,R.mipmap.ss,R.mipmap.tv,R.mipmap.hindu,R.mipmap.hindu,R.mipmap.chronic,R.mipmap.indiatoday,R.mipmap.ss,R.mipmap.tv,R.mipmap.chronic,R.mipmap.hindu,R.mipmap.hindu,R.mipmap.indiatoday,R.mipmap.ss};
+   // int[] paperlogo={R.mipmap.tv,R.mipmap.chronic,R.mipmap.hindu,R.mipmap.chronic,R.mipmap.indiatoday,R.mipmap.ss,R.mipmap.tv,R.mipmap.hindu,R.mipmap.hindu,R.mipmap.chronic,R.mipmap.indiatoday,R.mipmap.ss,R.mipmap.tv,R.mipmap.chronic,R.mipmap.hindu,R.mipmap.hindu,R.mipmap.indiatoday,R.mipmap.ss};
 
 
     @Override
@@ -54,7 +54,7 @@ public class RecAdapter extends RecyclerView.Adapter<RecAdapter.NewsViewHolder>
      //   Log.d("ssc",""+arrayList.get(position).getName());
         holder.relpaperback.setBackgroundColor(Color.parseColor(colors[position]));
         holder.layout.setBackgroundColor(Color.parseColor(colors[position]));
-        holder.logo.setImageResource(paperlogo[position]);
+       // holder.logo.setImageResource(paperlogo[position]);
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

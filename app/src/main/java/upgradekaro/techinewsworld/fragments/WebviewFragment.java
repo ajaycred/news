@@ -139,7 +139,7 @@ public class WebviewFragment extends Fragment implements View.OnClickListener {
     }
 
     public void Dboperationread(){
-        Cursor recfav=dbhelper.GetFavLinks();
+        Cursor recfav=dbhelper.getDatafromfavTable();
         if (recfav!=null){
             if (recfav.moveToFirst()){
                 do {

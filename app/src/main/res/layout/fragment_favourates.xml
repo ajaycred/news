@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <upgradekaro.techinewsworld.utils.CustomFontDays
+        android:layout_width="wrap_content"
+        android:id="@+id/fragfav_title"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/hello_blank_fragment" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_above="@+id/adview_fav"
+        android:id="@+id/fragfav_lstview_links"
+        android:divider="@null"
+        android:layout_below="@+id/fragfav_title"
+        android:layout_height="match_parent">
+    </ListView>
+    <com.google.android.gms.ads.formats.NativeAdView
+        android:id="@+id/adview_fav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId=""/>
+</RelativeLayout>

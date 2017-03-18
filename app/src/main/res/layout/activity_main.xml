@@ -1,18 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
-    android:background="@mipmap/paper"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="upgradekaro.techinewsworld.MainActivity">
-   <include layout="@layout/maintool"></include>
-   
-    <RelativeLayout
+    <android.support.v4.widget.DrawerLayout
         android:layout_width="match_parent"
-        android:id="@+id/activitymain_container"
-        android:layout_below="@+id/maintoolbar"
+        tools:openDrawer="start"
+        android:id="@+id/drawer"
+        android:fitsSystemWindows="true"
         android:layout_height="match_parent">
-    </RelativeLayout>
-
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/activity_main"
+            android:layout_height="match_parent">
+            <include layout="@layout/maintool"></include>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/activitymain_container"
+                android:layout_below="@+id/maintoolbar"
+                android:background="@mipmap/paper"
+                android:layout_height="match_parent">
+            </RelativeLayout>
+        </RelativeLayout>
+        <android.support.design.widget.NavigationView
+            android:id="@+id/navigation"
+            android:background="#c3ffffff"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start">
+        </android.support.design.widget.NavigationView>
+    </android.support.v4.widget.DrawerLayout>
 </RelativeLayout>
