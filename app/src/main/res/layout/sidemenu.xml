@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:id="@+id/sidemenu_ivclosemenu"
+        android:src="@drawable/arrow_left" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/sidemenu_tvmenuweb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableBottom="@drawable/web"
+            android:drawableTint="#fff"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Web"
+            android:textColor="#fff" />
+        <TextView
+            android:id="@+id/sidemenu_tvmenunews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableBottom="@drawable/newspaper"
+            android:drawableTint="#fff"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="News Feeds"
+            android:textColor="#fff" />
+        <TextView
+            android:id="@+id/sidemenu_tvmenuvideos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableBottom="@drawable/video"
+            android:drawableTint="#fff"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Videos"
+            android:textColor="#fff" />
+        <TextView
+            android:id="@+id/sidemenu_tvmenucategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableBottom="@drawable/view_grid"
+            android:drawableTint="#fff"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Category"
+            android:textColor="#fff" />
+        <TextView
+            android:id="@+id/sidemenu_tvmenufavourite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableBottom="@drawable/heart"
+            android:drawableTint="#fff"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Favourite"
+            android:textColor="#fff" />
+    </LinearLayout>
+</RelativeLayout>

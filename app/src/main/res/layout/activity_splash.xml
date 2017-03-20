@@ -4,11 +4,18 @@
     android:id="@+id/activity_splash"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:background="@mipmap/splash"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/main"
     tools:context="upgradekaro.techinewsworld.Splash">
 
+    <upgradekaro.techinewsworld.utils.CustomFontDays
+        android:text="Techi \n         News"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:drawableTop="@mipmap/tech1"
+        android:drawableTint="#fff"
+        android:textSize="40dp"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2" />
 </RelativeLayout>

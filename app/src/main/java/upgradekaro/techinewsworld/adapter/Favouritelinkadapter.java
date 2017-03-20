@@ -28,7 +28,7 @@ import upgradekaro.techinewsworld.utils.NetworkChecker;
 
 public class Favouritelinkadapter extends BaseAdapter {
     ArrayList<Favmodel> arrayList;
-    String applink="https://play.google.com/store/apps/details?id=upgradekaro.personalgsmarenauoapp";
+    String applink = "https://play.google.com/store/apps/details?id=upgradekaro.personalgsmarenauoapp";
     Context context;
     Dbhelper dbhelper;
 
@@ -70,7 +70,7 @@ public class Favouritelinkadapter extends BaseAdapter {
                 final Intent shareintent = new Intent(Intent.ACTION_SEND);
                 shareintent.setType("text/plain");
                 shareintent.putExtra(Intent.EXTRA_SUBJECT, "");
-                shareintent.putExtra(Intent.EXTRA_TEXT, ""+favmodel.getFavlink()+"\n Download app for more info \n"+applink);
+                shareintent.putExtra(Intent.EXTRA_TEXT, "" + favmodel.getFavlink() + "\n Download app for more info \n" + applink);
                 context.startActivities(new Intent[]{Intent.createChooser(shareintent, "share via")});
 
 
@@ -85,7 +85,7 @@ public class Favouritelinkadapter extends BaseAdapter {
                     bundle.putString("clickeditem", "" + favmodel.getFavlink());
                     webFragment.setArguments(bundle);
                     FragmentTransaction ft = ((FragmentActivity) context).getSupportFragmentManager().beginTransaction();
-                    ft.replace(R.id.activitymain_container,webFragment);
+                    ft.replace(R.id.activitymain_container, webFragment);
                     ft.addToBackStack(null);
                     ft.commit();
                 } else {

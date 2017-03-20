@@ -22,7 +22,7 @@ public class Splash extends AppCompatActivity {
     class Splashe extends Thread{
         public void run(){
             try {
-                Thread.sleep(2500);
+                Thread.sleep(1000);
                 Intent inte=new Intent(Splash.this,MainActivity.class);
                 startActivity(inte);
             } catch (InterruptedException e) {

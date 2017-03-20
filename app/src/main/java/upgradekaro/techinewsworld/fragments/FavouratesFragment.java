@@ -46,9 +46,9 @@ public class FavouratesFragment extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_favourates, container, false);
         fragFavlistview = (ListView) v.findViewById(R.id.fragfav_lstview_links);
-          adViewfav= (AdView) v.findViewById(R.id.adview_fav);
+          //adViewfav= (AdView) v.findViewById(R.id.adview_fav);
          AdRequest adRequestfav=new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).build();
-        adViewfav.loadAd(adRequestfav);
+       // adViewfav.loadAd(adRequestfav);
         favouritelinkadapter = new Favouritelinkadapter(arrayList, getContext());
         fragFavlistview.setAdapter(favouritelinkadapter);
         favouritelinkadapter.notifyDataSetChanged();
