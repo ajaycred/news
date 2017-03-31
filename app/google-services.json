@@ -1,35 +1,35 @@
 {
   "project_info": {
-    "project_number": "825496927189",
-    "firebase_url": "https://technews-66882.firebaseio.com",
-    "project_id": "technews-66882",
-    "storage_bucket": "technews-66882.appspot.com"
+    "project_number": "425732743924",
+    "firebase_url": "https://news-paper-36b6a.firebaseio.com",
+    "project_id": "news-paper-36b6a",
+    "storage_bucket": "news-paper-36b6a.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:825496927189:android:5b0e93bca1b49b86",
+        "mobilesdk_app_id": "1:425732743924:android:5b0e93bca1b49b86",
         "android_client_info": {
           "package_name": "upgradekaro.techinewsworld"
         }
       },
       "oauth_client": [
         {
-          "client_id": "825496927189-h8vbobsp7m63oflvfil6edihn0ikk6dv.apps.googleusercontent.com",
+          "client_id": "425732743924-g0s1knenm6i65deeevcru706ro922luf.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "upgradekaro.techinewsworld",
-            "certificate_hash": "47C41038A7324CC1461BD922742EEA7C9E1B1887"
+            "certificate_hash": "47c41038a7324cc1461bd922742eea7c9e1b1887"
           }
         },
         {
-          "client_id": "825496927189-h1mea8hacmt1g6h14gemm53mgngkjqv0.apps.googleusercontent.com",
+          "client_id": "425732743924-gi0hsn198hbp19o2jd8ntbr5k86qvd2a.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAWf4-lne3cCTwx3mTcsLEhLfIq8LCR4-0"
+          "current_key": "AIzaSyAkB0ewBGVqerzzPcT4VqWGeBALBALFk8U"
         }
       ],
       "services": {
@@ -40,7 +40,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "825496927189-h1mea8hacmt1g6h14gemm53mgngkjqv0.apps.googleusercontent.com",
+              "client_id": "425732743924-gi0hsn198hbp19o2jd8ntbr5k86qvd2a.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

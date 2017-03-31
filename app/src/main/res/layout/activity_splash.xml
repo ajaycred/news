@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/main"
-    tools:context="upgradekaro.techinewsworld.Splash">
+    tools:context="upgradekaro.techinewsworld.activity.Splash">
 
     <upgradekaro.techinewsworld.utils.CustomFontDays
         android:text="Techi \n         News"

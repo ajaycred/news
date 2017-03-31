@@ -1,4 +1,4 @@
-package upgradekaro.techinewsworld;
+package upgradekaro.techinewsworld.activity;
 
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -15,6 +15,7 @@ import android.widget.TextView;
 
 import com.google.firebase.database.FirebaseDatabase;
 
+import upgradekaro.techinewsworld.R;
 import upgradekaro.techinewsworld.adapter.PageviewAdapter;
 import upgradekaro.techinewsworld.fragments.FavouratesFragment;
 import upgradekaro.techinewsworld.fragments.Feeds;
@@ -123,11 +124,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public  void Tablayoutsetup(){
         PageviewAdapter pageviewAdapter=new PageviewAdapter(getSupportFragmentManager());
+        pageviewAdapter.addfragment(new GeneralFragment(),"Top Web");
+        pageviewAdapter.addfragment(new Feeds(),"news Feeds");
         pageviewAdapter.addfragment(new Videos(),"Tech videos");
         pageviewAdapter.addfragment(new FavouratesFragment(),"favourates");
-        pageviewAdapter.addfragment(new GeneralFragment(),"general");
-        pageviewAdapter.addfragment(new Feeds(),"news Feeds");
         mainlayviewpager.setAdapter(pageviewAdapter);
+        mainlayviewpager.setOffscreenPageLimit(4);
         mainlaytablayout.setupWithViewPager(mainlayviewpager);
     }
 }
