@@ -28,10 +28,11 @@ import upgradekaro.techinewsworld.models.Sites;
  */
 public class GeneralFragment extends Fragment {
 
-    FirebaseDatabase firebaseDatabase;
+
     ProgressDialog pgdailogloading;
     ListView listView;
     ArrayList<Sites> arrayList=new ArrayList<>();
+    FirebaseDatabase firebaseDatabase;
     DatabaseReference reference;
     public GeneralFragment() {
         // Required empty public constructor
@@ -80,4 +81,7 @@ public class GeneralFragment extends Fragment {
         Listada adapter=new Listada(arrayList,getContext());
         listView.setAdapter(adapter);
     }
+
+
+
 }

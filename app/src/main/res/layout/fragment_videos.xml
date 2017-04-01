@@ -5,9 +5,10 @@
     android:background="#fff"
     android:layout_height="match_parent"
     tools:context="upgradekaro.techinewsworld.fragments.Videos">
-<com.google.android.youtube.player.YouTubePlayerView
-    android:layout_width="match_parent"
-    android:id="@+id/youtubeview"
-    android:layout_height="wrap_content">
-</com.google.android.youtube.player.YouTubePlayerView>
+    <GridView
+        android:layout_width="match_parent"
+        android:numColumns="2"
+        android:gravity="center"
+        android:id="@+id/main_grid"
+        android:layout_height="match_parent" />
 </RelativeLayout>
